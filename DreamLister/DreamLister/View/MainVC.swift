@@ -18,13 +18,16 @@ class MainVC: UIViewController, UITableViewDelegate, UITableViewDataSource, NSFe
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        tableView?.dataSource = self
         tableView?.delegate = self
+        tableView?.dataSource = self
+
         //generateTestData()
         attemptFetch()
 
         // Do any additional setup after loading the view, typically from a nib.
     }
+
+    ///// TESTIUNG
 
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
 
